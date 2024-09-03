@@ -106,13 +106,13 @@ txtNumber.addEventListener("blur", function(event) {
 
 window.addEventListener("load", function(){
    if (this.localStorage.getItem("contador") != null){
-    contador = Number(localStorage.getItem("contador"));
+    contador = Number(this.localStorage.getItem("contador"));
    } //!null
    if (this.localStorage.getItem("totalEnProductos") != null){
-    totalEnProductos = Number(localStorage.getItem("totalEnProductos"));
+    totalEnProductos = Number(this.localStorage.getItem("totalEnProductos"));
    } //!null
    if (this.localStorage.getItem("costoTotal") != null){
-    costoTotal = Number(localStorage.getItem("costoTotal"));
+    costoTotal = Number(this.localStorage.getItem("costoTotal"));
    } //!null
    contadorProductos.innerText = contador;
    productosTotal.innerText=totalEnProductos;
